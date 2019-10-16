@@ -1,4 +1,4 @@
-package htl;
+package at.htl.vehicle;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,6 @@ import javax.ws.rs.core.Response;
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.empty;
-
 
 public class VehicleEndpointIT {
     private Client client;
@@ -54,5 +53,4 @@ public class VehicleEndpointIT {
         assertThat(deleteResponse.getStatus(), is(204));
 
     }
-
 }
